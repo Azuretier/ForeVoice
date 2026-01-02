@@ -11,15 +11,15 @@ Gemini 2.0 Flash Multimodal Live API を使用した、リアルタイムで会�
 
 ## 🛠 準備するもの
 - [Node.js](https://nodejs.org/) (v18以上推奨)
-- [Discord Bot Token](https://discord.com/developers/applications): Botをサーバーに招待し、`Connect` および `Speak` の権限を与えておいてください。
+- [Discord Bot Token](https://discord.com/developers/applications): BotのMessage Content Intentを有効にする必要があります。
 - [Google Gemini API Key](https://aistudio.google.com/app/apikey): Gemini 2.0 Flash が利用可能なキーが必要です。
 
 ## 📦 セットアップ
 
 1. **リポジトリをクローン**
    ```bash
-   git clone [https://github.com/あなたのユーザー名/リポジトリ名.git](https://github.com/あなたのユーザー名/リポジトリ名.git)
-   cd リポジトリ名
+   git clone https://github.com/Azuretier/ForeVoice.git
+   cd ForeVoice
    ```
 
 2. **依存関係のインストール**
@@ -29,7 +29,6 @@ Gemini 2.0 Flash Multimodal Live API を使用した、リアルタイムで会�
 
 3. **環境変数の設定**
    プロジェクトのルートディレクトリに `.env` ファイルを作成し、以下の項目を設定してください。
-   （`.env.example` をコピーして作成することも可能です）
 
    ```env
    # Discord設定
@@ -47,7 +46,7 @@ npx ts-node src/index.ts
 ```
 
 ## 📝 注意事項
-- **.env の管理**: APIキーやトークンは機密情報です。`.env` ファイルは絶対に GitHub 等の公開場所にプッシュしないでください。(`.gitignore` に追加済みであることを確認してください)
+- **トークンの管理**: APIキーやトークンは機密情報です。公開しないようにしましょう。
 - **API利用制限**: Gemini 2.0 の利用には Google AI Studio の利用規約が適用されます。
 
 ## 📄 ライセンス
